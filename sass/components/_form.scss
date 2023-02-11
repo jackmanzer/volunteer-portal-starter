@@ -1,0 +1,56 @@
+@use '../abstracts/' as *;
+
+form {
+
+    input {
+        height: 40px;
+        width: 100%;
+    }
+
+    fieldset {
+        border: none;
+        padding: unset;
+
+        legend {
+            font-size: $fs-lg;
+        }
+    }
+  
+    button[type="submit"] {
+        --stack-space: 20px;
+        height: 40px;
+    }
+
+    .field-group {
+        --stack-space: 10px;
+
+        & > .input-group {
+            flex: 1;
+        }
+        @media screen and (max-width: $bp-sm) {
+            .field-group > .input-group {
+              flex-basis: 100%;
+            }
+        }
+    }
+
+    .input-group {
+        --stack-space: .25rem;
+
+        label {
+            font-size: $fs-xs;
+        }    
+    }
+
+}
+
+
+  
+
+  
+  
+  
+  
+
+  
+ 

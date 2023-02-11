@@ -1,0 +1,22 @@
+
+/*auth*/
+
+.authWrapper {
+    --center-width: 100%;
+    --center-max-width: 400px;
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.authWrapper form {
+    margin-top: 20px;
+    width: 100%;
+    --stack-space: .5rem;
+}
+
+.authWrapper a {
+    --stack-space: 20px;
+}
+  

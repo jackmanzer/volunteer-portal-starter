@@ -1,0 +1,8 @@
+@use '../abstracts/' as *;
+
+button {
+    background-color: $stone700;
+    color: white;
+    border: none;
+    font-size: $fs-tiny;
+}

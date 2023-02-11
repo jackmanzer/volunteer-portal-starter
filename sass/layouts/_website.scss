@@ -1,0 +1,48 @@
+@use '../abstracts/' as *;
+
+/* body styles */
+
+body.sticky-footer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+body.sticky-footer > footer {
+    margin-top: auto;
+}
+
+/*header*/
+
+header {
+    background-color: $stone300;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 10px;
+    padding-inline: 20px;
+}
+
+@media screen and (min-width: $bp-sm)  {
+    header .logo-mobile {
+      display: none
+    }
+    header .logo-desktop {
+      display: inline;
+    }
+  }
+  
+@media screen and (max-width: $bp-sm)  {
+    header .logo-mobile {
+      display: inline;
+    }
+    header .logo-desktop {
+      display: none;
+    }
+  }
+
+/*footer*/
+
+footer {
+    background-color: $stone300;
+}

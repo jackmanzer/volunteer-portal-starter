@@ -1,0 +1,16 @@
+@use '../abstracts/' as *;
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*links*/
+
+a {
+    color: $link;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $link-hover;  
+}
